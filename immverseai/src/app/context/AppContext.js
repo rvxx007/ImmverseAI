@@ -7,6 +7,11 @@ import u4 from "../../../public/u4.png"
 import hp1 from "../../../public/heroPoster.svg";
 import hp2 from "../../../public/heroPoster1.svg";
 import bimg from "../../../public/bannerIm.svg"
+import cardImg1 from "../../../public/cardImg1.svg"
+import cardImg2 from "../../../public/cardImg2.svg"
+import cardImg3 from "../../../public/cardImg3.svg"
+import cardImg4 from "../../../public/cardImg4.svg"
+
 
 const appData = {
     hero:{
@@ -25,18 +30,22 @@ const appData = {
     },
     services:[
     {
+      img:cardImg1,
       title:"HoloLens",
       desc:"HoloLens display information, blend with the real world , or even simulate a virtual world."
     },
     {
+      img:cardImg2,
       title:"AIoT",
       desc:"AI and IoT are both emerging innovative technologies with a lot of potentials."
     },
     {
+      img:cardImg3,
       title:"Metaverse",
       desc:"A Network of 3D virtual worlds focused on social connection."
     },
     {
+      img:cardImg4,
       title:"TPCASTT",
       desc:"Method is great to start students reading and inferring with little assistance from the instructor"
     }

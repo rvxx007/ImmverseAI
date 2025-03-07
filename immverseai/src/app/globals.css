@@ -202,9 +202,77 @@ font-size: 45px;
 .banner{
   margin-top: 49px;
   width: 100%;
-  height: 154.29px;
+  height: 200px;
   background-image: url("../../public/banner.svg");
   background-repeat: no-repeat;
   background-position:center;
   background-size: cover;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 80px;
 }
+
+.banHead{
+  display: flex;
+  flex-direction: column;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+/* ---------------------------------------------------------- */
+
+
+.cardSection{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 150px;
+  gap: 50px;
+}
+.cardBlock{
+  width:  350px;
+  height: 300px;
+  position: relative;
+}
+
+
+.blurCard{
+  width: 210px;
+  height: 100px;
+  z-index: 50;
+  position: absolute;
+  bottom: 0;
+  border-bottom-left-radius: 10px;
+  font-size: 13px;
+  line-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  padding: 15px;
+  margin-bottom: 11px;
+  backdrop-filter: blur(10px);
+  background: transparent;
+}
+
+.imgCard{
+  width:  350px;
+  height: 300px;
+  position: absolute;
+  z-index: 10;
+}
+
+.bc-title{
+  font-weight: 700;
+  text-decoration: underline;
+}
+.bc-desc{
+  font-weight: 400;
+}
+
+/* ------------------------------------------------------------ */
+

@@ -1,13 +1,18 @@
+"use client";
 import React, { useContext } from 'react'
 import Image from 'next/image';
+import { AppContextDataFun } from '@/app/context/AppContext';
 
 
 const Banner = () => {
-  const appData = useContext(AppContext);
+  const appData = AppContextDataFun();
   return (
     <section className='banner'>
-        <h1></h1>
-        <Image src={appData.banner.img} />
+        <span className='banHead'>
+          <span>{appData.banner.txt1}</span>
+          <span>{appData.banner.txt2}</span>
+        </span>
+        <Image width={200} height={200} src={appData.banner.img} />
     </section>
   )
 }
