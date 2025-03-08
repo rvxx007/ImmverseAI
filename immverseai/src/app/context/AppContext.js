@@ -11,7 +11,9 @@ import cardImg1 from "../../../public/cardImg1.svg"
 import cardImg2 from "../../../public/cardImg2.svg"
 import cardImg3 from "../../../public/cardImg3.svg"
 import cardImg4 from "../../../public/cardImg4.svg"
-
+import climg1 from "../../../public/climg1.png"
+import climg2 from "../../../public/climg2.png"
+import climg3 from "../../../public/climg3.png"
 
 const appData = {
     hero:{
@@ -61,6 +63,7 @@ const appData = {
           subTxt:" know in real-time where the money is spent,and I don’t have to lend out the company’s credit card anymore. What a relief!",
           name:"Denny Hilguston",
           username:"@denny.hill",
+          img:climg1
         },
         {
           title:"starstar",
@@ -68,6 +71,7 @@ const appData = {
           subTxt:"VISUALS are much better. The improvements in optics and resolution and much more than a modern console generation leap.",
           name:"Vani Pandey",
           username:"@vani.pandey",
+          img:climg2
         },
         {
           title:"starstar",
@@ -75,6 +79,7 @@ const appData = {
           subTxt:"I can actually see the improvement in the graphics, not having the external sensors is a big plus.",
           name:"milly Singh",
           username:"@milly.singh",
+          img:climg3
         }
       ]
     }

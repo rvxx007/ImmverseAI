@@ -3,7 +3,11 @@
 import Image from 'next/image'
 import hero1 from "../../public/hero1.svg";
 import { AppContextDataFun } from '@/app/context/AppContext';
+import { Orbitron } from 'next/font/google';
 
+const orbitron = Orbitron({
+  subsets:["latin"]
+});
 
 
 const Hero = () => {
@@ -12,10 +16,10 @@ const Hero = () => {
   const appData = AppContextDataFun();
 
   return (
-    <section className='hero bor '>
+    <section id='company' className='hero '>
         <div class="parent1">
             <div class="div1">
-              <h1 className='headTxt'>{appData.hero.headTxt}</h1>
+              <h1 className={`headTxt ${orbitron.variable}`}>{appData.hero.headTxt}</h1>
               <span className='subTxt'>{appData.hero.subTxt}</span>
               <div className='blockBtn'>
                 <button className='su-btn'>Get it Now</button>
@@ -33,7 +37,7 @@ const Hero = () => {
         <Image className='hp1' src={appData.hero.hp.hp1} width={430} height={430} />
         </div>
         <div class="div4">
-              <h1 className='headTxt1'>{appData.hero.headTxt1}</h1>
+              <h1 className={`headTxt1${orbitron.variable} `}>{appData.hero.headTxt1}</h1>
               <span className='subTxt1'>{appData.hero.subTxt1}</span>
               <div className='blockBtn'>
                 <button className='su-btn'>Get it Now</button>

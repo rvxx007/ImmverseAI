@@ -4,7 +4,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { AppContextProvider } from "./context/AppContext";
 
 const inter = Inter({
-
   subsets:['latin']
 })
 

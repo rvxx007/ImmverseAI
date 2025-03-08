@@ -12,7 +12,7 @@ const Banner = () => {
           <span>{appData.banner.txt1}</span>
           <span>{appData.banner.txt2}</span>
         </span>
-        <Image width={200} height={200} src={appData.banner.img} />
+        <Image className='bannerImg' width={200} height={200} src={appData.banner.img} />
     </section>
   )
 }
