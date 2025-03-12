@@ -17,7 +17,7 @@ import climg3 from "../../../public/climg3.png"
 
 const appData = {
     hero:{
-      headTxt:"Lets Explore Three-Dimensional visual",
+      headTxt:"Let's Explore Three-Dimensional visual",
       subTxt:"With virtual technology you can see the digital world feel more real and you can play the game with a new style.",
       headTxt1:"New Experience In Playing Game",
       subTxt1:"You can try playing the game with a new style and of course a more real feel, like you are the main character in your game and adventure in this new digital world.",
