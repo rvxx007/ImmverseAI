@@ -4,15 +4,18 @@ import Image from 'next/image';
 import { AppContextDataFun } from '@/app/(context)/AppContext';
 
 
-const Banner = () => {
+const Banner = ({obj}) => {
   const appData = AppContextDataFun();
+  
+  const [onPlay, setOnPlay] =obj;
   return (
-    <section className='banner'>
-        <span className='banHead'>
+    <section className='banner-section'>
+        <span className='bs-head'>
           <span>{appData.banner.txt1}</span>
           <span>{appData.banner.txt2}</span>
         </span>
-        <Image className='bannerImg' width={200} height={200} src={appData.banner.img} alt='banner img' />
+        
+        <Image className="btn ban-img-btn" onClick={()=>setOnPlay(true)} className='bs-video' width={200} height={200} src={appData.banner.img} alt='banner img' />
     </section>
   )
 }

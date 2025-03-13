@@ -244,7 +244,9 @@ border: none;
 }
 
 .hero-parent1-div1{
-  margin-top: -100px;
+  /* border: 1px solid red; */
+  margin-bottom: 5px;
+  width: 50%;
   padding: 0px 20px;
   gap: 25px;
   display: flex;
@@ -295,10 +297,6 @@ font-size: 55px;
   font-weight: 600;
 }
 
-.hero-parent2-div1{
-  display: flex;
-  gap:0;
-}
 
 .hero-parent2{
   height: 450px;
@@ -307,6 +305,10 @@ font-size: 55px;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
+}
+.hero-parent2-div1{
+  display: flex;
+  gap:0;
 }
 
 .div4{
@@ -369,7 +371,7 @@ font-size: 55px;
 
 /* ----------------------------------------------------------------------- */
 
-.banner{
+.banner-section{
   margin-top: 49px;
   width: 100%;
   height: 200px;
@@ -384,7 +386,7 @@ font-size: 55px;
   padding: 0 80px;
 }
 
-.banHead{
+.bs-head{
   display: flex;
   flex-direction: column;
   font-size: 30px;
@@ -565,6 +567,8 @@ color: #EB4468;
   }
 
   .hero-parent1-div1{
+    width: 100%;
+    padding: 0px;
     margin-top: 0px;
   }
 
@@ -579,6 +583,8 @@ color: #EB4468;
 
   .hero-parent2{
     flex-direction: column;
+    height: 54rem;
+
   }
 
   .hero-parent2-div1{
@@ -596,13 +602,50 @@ color: #EB4468;
     padding: 10px;
   }
 
-  .banHead{
-    font-size: larger;
-  }
-  
-  .banner{
+/* ------------------------------------ */
+/* Banner Section */
+/* ------------------------------------ */
+  .banner-section{
     padding: 0 15px;
   }
+  
+  .bs-head{
+    font-size: larger;
+  }
+
+  .bs-video{
+    cursor: pointer;
+  }
+
+/* ------------------------------------ */
+/* Modal section */
+/* ------------------------------------ */
+
+.modal-section{
+  background-color: #000000 !important;
+}
+
+.ms-div{
+  border: 1px solid green;
+}
+
+.ms-close-div{
+  width: 100%;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  border: 1px solid green;
+
+}
+
+.ms-div>.ms-close-div{
+  cursor: pointer;
+}
+
+
+/* ------------------------------------ */
+/* ClientView section */
+/* ------------------------------------ */
 
   .cardSection{
     padding: 30px;
