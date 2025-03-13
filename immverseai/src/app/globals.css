@@ -396,29 +396,34 @@ font-size: 55px;
 /* ---------------------------------------------------------- */
 
 
-.cardSection{
+.features-section{
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  padding: 150px;
-  gap: 50px;
+  margin: 50px 0px;
+  padding: 50px;
+  gap: 120px;
 }
-.cardBlock{
-  width:  350px;
+.fs-card-block{
+  width:  353px;
   height: 300px;
   position: relative;
 }
 
+.fs-card-block:hover{
+  filter: drop-shadow(0 0 0.95rem var(--p1));
+}
 
-.blurCard{
-  width: 210px;
-  height: 100px;
+
+.fs-blur-card{
+  width: 99%;
+  height: 110px;
   z-index: 50;
   position: absolute;
   bottom: 0;
   border-bottom-left-radius: 10px;
-  font-size: 13px;
+  font-size: 18px;
   line-height: 100%;
   display: flex;
   flex-direction: column;
@@ -430,10 +435,11 @@ font-size: 55px;
   background: transparent;
 }
 
-.imgCard{
+.fs-card-img{
   width:  350px;
   height: 300px;
   position: absolute;
+  margin: auto 0px;
   z-index: 10;
 }
 
@@ -602,6 +608,10 @@ color: #EB4468;
     padding: 10px;
   }
 
+  .fs-card-block{
+    width: 100%;
+  }
+
 /* ------------------------------------ */
 /* Banner Section */
 /* ------------------------------------ */
@@ -626,7 +636,7 @@ color: #EB4468;
 }
 
 .ms-div{
-  border: 1px solid green;
+  
 }
 
 .ms-close-div{
@@ -647,8 +657,9 @@ color: #EB4468;
 /* ClientView section */
 /* ------------------------------------ */
 
-  .cardSection{
-    padding: 30px;
+  .features-section{
+    /* padding: 30px; */
+    margin: 50px 0px;
   }
 
   .cv-subhead{

@@ -15,7 +15,7 @@ const Banner = ({obj}) => {
           <span>{appData.banner.txt2}</span>
         </span>
         
-        <Image className="btn ban-img-btn" onClick={()=>setOnPlay(true)} className='bs-video' width={200} height={200} src={appData.banner.img} alt='banner img' />
+        <Image className="btn ban-img-btn bs-video" onClick={()=>setOnPlay(true)} width={200} height={200} src={appData.banner.img} alt='banner img' />
     </section>
   )
 }
