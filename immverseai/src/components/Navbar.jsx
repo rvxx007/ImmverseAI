@@ -13,7 +13,7 @@ const Navbar = ({obj}) => {
 
   
   return (
-    <header className="navbar">
+    <header className="header-section">
       <nav>
         <div>
           <Image

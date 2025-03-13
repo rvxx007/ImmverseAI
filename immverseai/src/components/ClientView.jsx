@@ -7,12 +7,12 @@ const ClientView = () => {
     const appData = AppContextDataFun();
 
   return (
-    <section className='clientViewSection'>
+    <section className='client-view-section'>
         <h1>{appData.testimonial.headTxt}</h1>
-        <p className='cvtestsubTxt'>{appData.testimonial.subTxt}</p>
-        <div className='cvCardBlock'>
+        <p className='cv-subhead'>{appData.testimonial.subTxt}</p>
+        <div className='cv-card-div'>
         {appData.testimonial.tmUser.map((item, index)=>
-            <div className='cvCard' key={index}>
+            <div className='cv-card' key={index}>
                 <p><span className='cvSpantitle'>{item.title}</span><span className='cvSpanExt'>{item.ext}</span></p>
                 <p className='cvsubTxt'>{item.subTxt}</p>
                 <div className='cvProBlock'>

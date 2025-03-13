@@ -80,6 +80,29 @@ const appData = {
           name:"milly Singh",
           username:"@milly.singh",
           img:climg3
+        },
+        {
+          title:"starstar",
+          ext:"star",
+          subTxt:"I can actually see the improvement in the graphics, not having the external sensors is a big plus.",
+          name:"milly Singh",
+          username:"@milly.singh",
+          img:climg3
+        },
+        {
+          title:"starstar",
+          ext:"star",
+          subTxt:"I can actually see the improvement in the graphics, not having the external sensors is a big plus.",
+          name:"milly Singh",
+          username:"@milly.singh",
+          img:climg3
+        },{
+          title:"starstar",
+          ext:"star",
+          subTxt:"I can actually see the improvement in the graphics, not having the external sensors is a big plus.",
+          name:"milly Singh",
+          username:"@milly.singh",
+          img:climg3
         }
       ]
     }
