@@ -1,3 +1,4 @@
+"use client"
 import React from "react";
 import Image from "next/image";
 import logo from "../../public/ImmverseAI.svg";
@@ -5,7 +6,12 @@ import logo from "../../public/ImmverseAI.svg";
 import hmbMenu from "../../public/hamMenu.svg";
 import Link from "next/link";
 
-const Navbar = () => {
+const Navbar = ({obj}) => {
+
+    
+    const [open, setOpen]= obj;
+
+  
   return (
     <header className="navbar">
       <nav>
@@ -26,6 +32,7 @@ const Navbar = () => {
             height={50}
             src={hmbMenu}
             alt="ham menu"
+            onClick={()=>setOpen(true)}
           />
           <ul className=" menu-list menu-list-text">
             <li>
