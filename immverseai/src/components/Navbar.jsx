@@ -16,6 +16,7 @@ const Navbar = ({obj}) => {
     <header className="header-section">
       <nav>
         <div>
+          <span>
           <Image
             className="iai-logo"
             width={150}
@@ -24,6 +25,7 @@ const Navbar = ({obj}) => {
             src={logo}
             alt="Immverse Logo"
           />
+          </span>
         </div>
         <div className="menu-list-block">
           <Image

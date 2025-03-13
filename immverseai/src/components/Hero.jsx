@@ -26,10 +26,10 @@ const Hero = () => {
                 <button className='signup-btn1'>Explore Device</button>
               </div>
               <div className='hero-users-div'>
-                <span>{appData.hero.ui.map((item, index)=><span key={index}className='imrow'><Image  className='users-img' width={40} height={40} src={item} alt='mini profiles' /></span>)}</span> <span className='white-dot'> </span> <span className='eTxt'>{appData.hero.eTxt}</span>
+                <span>{appData.hero.ui.map((item, index)=><span key={index}><Image  className='users-img' width={40} height={40} src={item} alt='mini profiles' /></span>)}</span> <span className='white-dot'> </span> <span className='eTxt'>{appData.hero.eTxt}</span>
               </div>
             </div>
-            <Image className='hero-cvr-img' src={hero1} width={750} height={780} alt='Cinematic Virtual Reality' />
+            <Image className='hero-cvr-img' src={hero1} width={550}  alt='Cinematic Virtual Reality' />
         </div>
         <div className="hero-parent2">
         <div className="hero-parent2-div1 ">

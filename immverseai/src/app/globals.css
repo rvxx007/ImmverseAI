@@ -45,8 +45,15 @@ body {
     color-scheme: dark;
   }
 }
+
+.header-section>nav>div>span{
+  padding: 5px;
+
+margin-left: 20px;
+}
+
 .iai-logo{
-  margin-left: 20px;
+filter: drop-shadow(5px 5px black);
 }
 
 .mainBlock{
@@ -90,6 +97,15 @@ nav>div{
  
 }
 
+.link-list{
+  text-decoration: none;
+  color: var(--foreground);
+}
+.link-list:hover{
+  color: var(--p1);
+  transition: all ease-in-out 0.3s;
+}
+
 .menu-list>li:hover{
 cursor: pointer;
 color: var(--p1);
@@ -99,6 +115,11 @@ text-underline-offset: 15px;
 text-decoration: underline;
 text-decoration-color: var(--p1);
 text-decoration-thickness: 5px;
+
+}
+
+.menu-list>li:last-child{
+  text-decoration: none;
 }
 
 .menu-list-block{
@@ -121,10 +142,7 @@ margin: 0 auto;
 text-align: center;
 }
 
-.link-list{
-  text-decoration: none;
-  color: var(--foreground);
-}
+
 
 /* -------------------------- */
 /* SideNav Section */
@@ -179,6 +197,12 @@ text-decoration: none;
 color: var(--tWhite);
 background-color: var(--p1);
 border: none;
+}
+
+.signup-btn:hover,.signup-btn1:hover {
+  background-color: transparent;
+  border: 2px solid var(--p1);
+  transition: all ease-in 0.2s;
 }
 
 .signup-link{
@@ -249,15 +273,13 @@ font-size: 55px;
   height: 100%;
 }
 
-.hero-cvr-img{
-  margin-top: 35px;
-}
 
 .hero-users-div{
+  height: 70px;
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 30px;
+  gap: 30px;  
 }
 
 .white-dot{
@@ -279,6 +301,8 @@ font-size: 55px;
 }
 
 .hero-parent2{
+  height: 450px;
+  /* border: 1px solid red; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -292,11 +316,34 @@ font-size: 55px;
 }
 
 .hp2{
-  margin-top: -60px;
+  /* margin-top: -60px; */
+  animation: infinite alternate 3.5s ease-in-out swipe1;
+}
+.hp1{
+  /* margin-top: 80px; */
+  animation: infinite alternate 3.5s ease-in-out swipe2;
 }
 
-.hp1{
-  margin-top: 80px;
+.hp1:hover,.hp2:hover{
+  filter: drop-shadow(0 0 0.95rem var(--p1));
+}
+
+@keyframes swipe1{
+  from{
+    margin-top: 0px;
+  }
+  to{
+    margin-top: -60px;
+  }
+}
+
+@keyframes swipe2{
+  from{
+    margin-top: 0px;
+  }
+  to{
+    margin-top: 80px;
+  }
 }
 
 .hero-headTxt1{
@@ -311,6 +358,13 @@ font-size: 55px;
 
 .users-img{
   margin-left: -6px;
+}
+
+.users-img:hover{
+  border-radius: 100%;
+  border: 2px solid var(--p1);
+  width: 60px;
+  height: 60px;
 }
 
 /* ----------------------------------------------------------------------- */
@@ -494,7 +548,7 @@ color: #EB4468;
 
 @media (max-width: 992px)  {
 
-  .iai-logo{
+  .header-section>nav>div>span{
     margin-left: 0px;
   }
 
@@ -520,7 +574,6 @@ color: #EB4468;
   }
 
   .hero-cvr-img{
-    width: 100dvw;
     height: auto;
   }
 
