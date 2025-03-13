@@ -16,23 +16,23 @@ const Hero = () => {
   const appData = AppContextDataFun();
 
   return (
-    <section id='company' className='hero '>
-        <div className="parent1">
-            <div className="div1">
-              <h1 className={`headTxt ${orbitron.variable}`}>{appData.hero.headTxt}</h1>
-              <span className='subTxt'>{appData.hero.subTxt}</span>
-              <div className='blockBtn'>
-                <button className='su-btn'>Get it Now</button>
-                <button className='su-nob-btn'>Explore Device</button>
+    <section id='company' className='hero-section '>
+        <div className="hero-parent1">
+            <div className="hero-parent1-div1">
+              <h1 className={`hero-headTxt ${orbitron.variable}`}>{appData.hero.headTxt}</h1>
+              <span className='hero-subTxt'>{appData.hero.subTxt}</span>
+              <div className='hero-btn-div'>
+                <button className='signup-btn'>Get it Now</button>
+                <button className='signup-btn1'>Explore Device</button>
               </div>
-              <div className='endBlock'>
-                <span>{appData.hero.ui.map((item, index)=><span key={index}className='imrow'><Image  className='im' width={40} height={40} src={item} alt='miniProfiles' /></span>)}</span> <span className='wdot'> </span> <span className='eTxt'>{appData.hero.eTxt}</span>
+              <div className='hero-users-div'>
+                <span>{appData.hero.ui.map((item, index)=><span key={index}className='imrow'><Image  className='users-img' width={40} height={40} src={item} alt='mini profiles' /></span>)}</span> <span className='white-dot'> </span> <span className='eTxt'>{appData.hero.eTxt}</span>
               </div>
             </div>
-            <Image className='heroImg' src={hero1} width={750} height={780} alt='Cinematic Virtual Reality' />
+            <Image className='hero-cvr-img' src={hero1} width={750} height={780} alt='Cinematic Virtual Reality' />
         </div>
-        <div className="parent2">
-        <div className="div3">
+        <div className="hero-parent2">
+        <div className="hero-parent2-div1 ">
         <Image className='hp2' src={appData.hero.hp.hp2} width={430} height={430} alt='Girl with VR'/>
         <Image className='hp1' src={appData.hero.hp.hp1} width={430} height={430} alt="Boy with VR"/>
         </div>
@@ -40,7 +40,7 @@ const Hero = () => {
               <h1 className={`headTxt1${orbitron.variable} `}>{appData.hero.headTxt1}</h1>
               <span className='subTxt1'>{appData.hero.subTxt1}</span>
               <div className='blockBtn'>
-                <button className='su-btn'>Get it Now</button>
+                <button className='signup-btn'>Get it Now</button>
               </div>
         </div>
         </div>

@@ -1,3 +1,4 @@
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -34,17 +35,17 @@ body {
   margin: 0;
 }
 
-a {
+/* a {
   color: inherit;
   text-decoration: none;
-}
+} */
 
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
 }
-.logo{
+.iai-logo{
   margin-left: 20px;
 }
 
@@ -71,7 +72,7 @@ nav>div{
   width: 50%;
 }
 
-.hrmenu{
+.menu-list{
   width: 100%;
   display: flex;
   justify-content: space-evenly;
@@ -79,7 +80,7 @@ nav>div{
   list-style: none;
 }
 
-.hrmenu>li:hover{
+.menu-list>li:hover{
 cursor: pointer;
 color: var(--p1);
 text-underline-offset: 15px;
@@ -88,18 +89,18 @@ text-decoration-color: var(--p1);
 text-decoration-thickness: 5px;
 }
 
-.menuBlock{
+.menu-list-block{
   display: flex;
   justify-content: center;
   align-items: center;
    
 }
 
-.hbmenu{
+.ham-menu-img{
   display: none;
 }
 
-.hmtext{
+.menu-list-text{
 font-family: "Inter";
 font-weight: 700;
 font-size: 17.51px;
@@ -108,12 +109,56 @@ margin: 0 auto;
 text-align: center;
 }
 
-.liLink{
+.link-list{
   text-decoration: none;
   color: var(--tWhite);
 }
 
-.su-btn{
+/* -------------------------- */
+/* sideNav Section */
+.sidenavmenu{
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.945);
+}
+.sidenav-ul{
+  padding-top: 50px;
+  list-style: none;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-evenly; */
+  
+}
+
+.list-item{
+  cursor: pointer;
+  text-align: center;
+  padding: 15px;
+  border-radius: 100px;
+  font-weight: 700;
+}
+.list-item:hover{
+  border:4px solid var(--p1);
+  width: 100%;
+}
+
+.list-item-close{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end !important;
+  align-items: end;
+  padding: 0px 30px;
+
+}
+
+.list-item-close>span{
+  cursor: pointer;
+}
+
+/*  */
+
+
+.signup-btn{
 width: 130px;
 height: 50px;
 font-weight: 700;
@@ -125,7 +170,7 @@ background-color: var(--p1);
 border: none;
 }
 
-.suLink{
+.signup-link{
   width: 130px;
 height: 50px;
 font-weight: 700;
@@ -137,7 +182,7 @@ background-color: var(--p1);
 border: none;
 }
 
-.su-nob-btn{
+.signup-btn1{
   width: 150px;
   height: 50px;
   font-weight: 700;
@@ -151,14 +196,14 @@ border: none;
   border: 1px solid red;
 }
 
-.parent1{
+.hero-parent1{
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
 }
 
-.div1{
+.hero-parent1-div1{
   margin-top: -100px;
   padding: 0px 20px;
   gap: 25px;
@@ -168,38 +213,38 @@ border: none;
 
 }
 
-.headTxt{
+.hero-headTxt{
   width: 100%;
   font-family: "Orbitron", sans-serif !important;
 font-weight: 900;
 font-size: 55px;
 }
-.subTxt{
+.hero-subTxt{
   font-size: 19px;
   padding: 0 90px 0 0 ; 
 }
 
-.blockBtn{
+.hero-btn-div{
   display: flex;
   gap: 15px;
 }
 
-.hero{
+.hero-section{
   height: 100%;
 }
 
-.heroImg{
+.hero-cvr-img{
   margin-top: 35px;
 }
 
-.endBlock{
+.hero-users-div{
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 30px;
 }
 
-.wdot{
+.white-dot{
   background-color: var(--tWhite);;
   padding: 5px;
   width: 11px;
@@ -212,12 +257,12 @@ font-size: 55px;
   font-weight: 600;
 }
 
-.div3{
+.hero-parent2-div1{
   display: flex;
   gap:0;
 }
 
-.parent2{
+.hero-parent2{
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -238,7 +283,7 @@ font-size: 55px;
   margin-top: 80px;
 }
 
-.headTxt1{
+.hero-headTxt1{
   font-family: "Orbitron", sans-serif !important;
   font-weight: 600;
   font-size: 45px;
@@ -248,7 +293,7 @@ font-size: 55px;
   padding-right: 60px;
 }
 
-.im{
+.users-img{
   margin-left: -6px;
 }
 
@@ -432,44 +477,49 @@ color: #EB4468;
 /* -------------------------------------------------------------- */
 
 @media (max-width: 992px)  {
-  .hrmenu{
+
+  .iai-logo{
+    margin-left: 0px;
+  }
+
+  .menu-list{
     display: none;
   }
   
-  .hbmenu{
+  .ham-menu-img{
     display: block;
   }
 
-  .menuBlock{
+  .menu-list-block{
     justify-content: right;
   }
 
-  .div1{
+  .hero-parent1-div1{
     margin-top: 0px;
   }
 
-  .parent1{
+  .hero-parent1{
     height: auto;
     flex-direction: column;
   }
 
-  .heroImg{
+  .hero-cvr-img{
     width: 100dvw;
     height: auto;
   }
 
-  .parent2{
+  .hero-parent2{
     flex-direction: column;
   }
 
-  .div3{
+  .hero-parent2-div1{
     margin-top: 75px;
-    gap: 18px;
+    gap: 12px;
   }
 
-  .div3>.hp1,.hp2{
-    width: 100%;
-    height: 100%;
+  .hp1,.hp2{
+    width: 49%;
+    /* height: 100%; */
   }
 
   .div4{
