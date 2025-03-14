@@ -10,16 +10,16 @@ const ClientView = () => {
     <section className='client-view-section'>
         <h1>{appData.testimonial.headTxt}</h1>
         <p className='cv-subhead'>{appData.testimonial.subTxt}</p>
-        <div className='cv-card-div'>
+        <div className='cv-card-div-row'>
         {appData.testimonial.tmUser.map((item, index)=>
             <div className='cv-card' key={index}>
-                <p><span className='cvSpantitle'>{item.title}</span><span className='cvSpanExt'>{item.ext}</span></p>
-                <p className='cvsubTxt'>{item.subTxt}</p>
-                <div className='cvProBlock'>
+                <p><span className='cv-span-title'>{item.title}</span><span className='cv-span-ext'>{item.ext}</span></p>
+                <p className='cv-span-msg'>{item.subTxt}</p>
+                <div className='cv-profile-block'>
                     <Image width={40} height={40} src={item.img} alt='card view image' />
-                    <div className='innerCVInfo'>
-                        <span className='cvInfoName'>{item.name}</span>
-                        <span className='cvInfoUsername'>{item.username}</span>
+                    <div className='cd-info-block'>
+                        <span className='cv-info-name'>{item.name}</span>
+                        <span className='cv-info-username'>{item.username}</span>
                     </div>
                 </div>
             </div>)}

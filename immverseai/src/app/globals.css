@@ -421,6 +421,7 @@ font-size: 55px;
   height: 110px;
   z-index: 50;
   position: absolute;
+  color: white;
   bottom: 0;
   border-bottom-left-radius: 10px;
   font-size: 18px;
@@ -472,18 +473,20 @@ letter-spacing: -2%;
 
 }
 
-.cv-card-div{
+.cv-card-div-row{
+  width: 100%;
+  height: 17rem;
   display: flex;
+  flex-direction: row;
   overflow-x: scroll;
-  justify-content: space-evenly;
+  justify-content: left;
   align-items: center;
-  gap: 10px;
-    
+  gap: 10px; 
   /* border: 1px solid greenyellow; */
 }
 
 .cv-card{
-  width: 20rem;
+ width: 30rem !important;
   padding: 10px;
   border-radius: 12px;
   background: linear-gradient(180deg, #AA14F0 -42.59%, rgba(0, 0, 0, 0) -42.59%, #CB8DE8 -42.58%, rgba(203, 143, 232, 0.18) 4.35%, rgba(151, 60, 68, 0.055) 99.99%, rgba(199, 137, 228, 0) 100%);
@@ -492,11 +495,11 @@ letter-spacing: -2%;
 
 }
 
-.cvSpantitle{
+.cv-span-title{
   color: #F7B603;
 }
 
-.cvSpantitle,.cvSpanExt{
+.cv-span-title,.cv-span-ext{
   font-family: Inter;
 font-weight: 700;
 font-size: 8px;
@@ -504,7 +507,7 @@ line-height: 8.57px;
 letter-spacing: 7%;
 }
 
-.cvsubTxt{
+.cv-span-msg{
 font-family: Inter;
 font-weight: 400;
 font-size: 9px;
@@ -513,7 +516,7 @@ letter-spacing: -2%;
 
 }
 
-.cvProBlock{
+.cv-profile-block{
   display: flex;
   justify-content: left;
   align-items: center;
@@ -523,7 +526,7 @@ letter-spacing: -2%;
 
 }
 
-.innerCVInfo{
+.cd-info-block{
   display: flex;
   flex-direction: column;
   justify-content: left;
@@ -532,7 +535,7 @@ letter-spacing: -2%;
   gap: 6px;
 }
 
-.cvInfoName{
+.cv-info-name{
   font-family: Inter;
 font-weight: 500;
 font-size: 12px;
@@ -541,7 +544,7 @@ letter-spacing: -2%;
 
 }
 
-.cvInfoUsername{
+.cv-info-username{
   font-family: Inter;
 font-weight: 500;
 font-size: 11px;
@@ -632,11 +635,17 @@ color: #EB4468;
 /* ------------------------------------ */
 
 .modal-section{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #000000 !important;
 }
 
 .ms-div{
-  
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .ms-close-div{
@@ -666,20 +675,26 @@ color: #EB4468;
     font-size: 15px;
   }
 
-  .cv-card-div{
+  .cv-card-div-row{
     width: 100%;
-    /* padding: 5px; */
-    
-    flex-direction: column;
- 
+
+
+    border: 1px solid red;
   }
 
 
 }
 
-::-webkit-scrollbar{
-  scroll-behavior: smooth;
-  scrollbar-width: 70px;
-  scrollbar-color: #C15CB0;
 
+::-webkit-scrollbar{
+  width: 6px;
+}
+
+::-webkit-scrollbar-track{
+  background: #1D1D1D;
+}
+
+::-webkit-scrollbar-thumb{
+  background: linear-gradient(#1D1D1D,#121212,#BB86FC,#BB86FC,#121212,#1D1D1D);
+  filter: brightness(100%);
 }
