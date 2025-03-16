@@ -445,6 +445,7 @@ font-size: 55px;
   flex-direction: column;
   font-size: 30px;
   font-weight: 600;
+  color: var(--background);
 }
 
 /* ---------------------------------------------------------- */
