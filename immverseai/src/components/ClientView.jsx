@@ -24,6 +24,8 @@ const ClientView = () => {
                 </div>
             </div>)}
         </div>
+
+        
     </section>
   )
 }

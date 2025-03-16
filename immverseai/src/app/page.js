@@ -14,9 +14,12 @@ export default function Home() {
 
   const [open, setOpen] = useState(false);
   const [onPlay, setOnPlay] = useState(false);
+  const [user, setUser] = useState(JSON.parse(localStorage.getItem("userData")));
+ 
+  
   return (
    <main className="container mainBlock position-relative">
-    <Navbar obj={[open, setOpen]}/>
+    <Navbar obj={[open, setOpen]} fbObj={[user, setUser]}/>
     <SideNavMenu obj={[open, setOpen]}/>
     <Hero/>
     <Banner obj={[onPlay, setOnPlay]}/>

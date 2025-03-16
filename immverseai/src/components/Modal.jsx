@@ -11,7 +11,7 @@ const Modal = ({obj}) => {
           <div className='ms-close-div d-flex justify-content-right align-item-center'>
             <Image className='btn btn-dark ' onClick={()=>setOnPlay(false)} src={close} width={50} height={50} alt='close'/>
           </div>
-          <video loop controls autoPlay muted src='https://dm0qx8t0i9gc9.cloudfront.net/watermarks/video/Sb7uiLMltks8nrrky/videoblocks-v1-0049_20220517-sf-shirokov-cybersport-people-4-panda-banda-crossmedia0000_s6f6zqdqn__379e0ec045939ddb863547f18513acdb__P360.mp4'>
+          <video className='ms-video-tag' loop controls autoPlay muted src='https://dm0qx8t0i9gc9.cloudfront.net/watermarks/video/Sb7uiLMltks8nrrky/videoblocks-v1-0049_20220517-sf-shirokov-cybersport-people-4-panda-banda-crossmedia0000_s6f6zqdqn__379e0ec045939ddb863547f18513acdb__P360.mp4'>
             
           </video>
         </div>

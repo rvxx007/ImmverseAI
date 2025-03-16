@@ -1,17 +1,21 @@
 "use client"
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import logo from "../../public/ImmverseAI.svg";
 
 import hmbMenu from "../../public/hamMenu.svg";
 import Link from "next/link";
+import UserProfile from "./UserProfile";
 
-const Navbar = ({obj}) => {
+const Navbar = ({obj,fbObj}) => {
 
     
     const [open, setOpen]= obj;
+    const [user, setUser] = fbObj;
+    const [profileIsOpen, setProfileIsOpen] = useState(false);
 
-  
+    const handleClick= ()=>setProfileIsOpen(!profileIsOpen);
+
   return (
     <header className="header-section">
       <nav>
@@ -53,9 +57,9 @@ const Navbar = ({obj}) => {
               </Link>
             </li>
             <li>
-              <Link href={"/auth"} className="signup-link">
+              {!user?<Link href={"/auth"} className="signup-link">
                 Sign Up
-              </Link>
+              </Link>:<><Image onClick={handleClick}  className="hs-profile-img" src={user.picUrl} width={50} height={50} alt={user.name} />{profileIsOpen?"open":<UserProfile obj={user}/>}</>}
             </li>
           </ul>
         </div>

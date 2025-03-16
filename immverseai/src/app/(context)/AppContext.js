@@ -15,6 +15,7 @@ import climg1 from "../../../public/climg1.png"
 import climg2 from "../../../public/climg2.png"
 import climg3 from "../../../public/climg3.png"
 
+
 const appData = {
     hero:{
       headTxt:"Let's Explore Three-Dimensional visual",
