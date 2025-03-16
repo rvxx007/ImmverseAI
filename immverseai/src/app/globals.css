@@ -80,7 +80,7 @@ filter: drop-shadow(5px 5px black);
   align-items: center;
 }
 
-nav>div{
+.header-section>nav>div{
   width: 50%;
 }
 
@@ -115,12 +115,9 @@ text-underline-offset: 15px;
 text-decoration: underline;
 text-decoration-color: var(--p1);
 text-decoration-thickness: 5px;
-
 }
 
-.menu-list>li:last-child{
-  text-decoration: none;
-}
+
 
 .menu-list-block{
   display: flex;
@@ -146,13 +143,17 @@ text-align: center;
   border-radius: 100%;
 }
 
+.nav-pro-block{
+  width: 200px !important;
+}
+
 
 /* -------------------------- */
 /* SideNav Section */
 /* -------------------------- */
 
   .user-profile-section{
-      width: 400px;
+      width: 300px;
       height: 300px;
       float: right;
       right: 0;
@@ -175,6 +176,26 @@ text-align: center;
     align-items: center;
     gap: 15px;
   }
+
+  .ups-div+div{
+    width: 100%;
+  }
+
+  .logout-btn{
+    width: 100%;
+    height: 40px;
+    font-weight: 700;
+    border-radius: 3.34px;
+    padding: 10px;
+    text-decoration: none;
+    color: var(--tWhite);
+    background-color: var(--p1);
+    border: none;
+    }
+.ups-email-txt{
+  text-decoration: none;
+  color: var(--foreground);
+}
 
 
 /* -------------------------- */

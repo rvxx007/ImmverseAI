@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <AppContextProvider>
-      <body className={`${inter.variable}`} cz-shortcut-listen="true">
+      <body className={`${inter.variable}`} >
         {children}
       </body>
       </AppContextProvider>

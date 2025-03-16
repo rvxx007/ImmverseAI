@@ -19,7 +19,7 @@ const Navbar = ({obj,fbObj}) => {
   return (
     <header className="header-section">
       <nav>
-        <div>
+        <div >
           <span>
           <Image
             className="iai-logo"
@@ -56,13 +56,15 @@ const Navbar = ({obj,fbObj}) => {
                 Features
               </Link>
             </li>
-            <li>
-              {!user?<Link href={"/auth"} className="signup-link">
-                Sign Up
-              </Link>:<><Image onClick={handleClick}  className="hs-profile-img" src={user.picUrl} width={50} height={50} alt={user.name} />{profileIsOpen?"open":<UserProfile obj={user}/>}</>}
-            </li>
+            
           </ul>
+          
         </div>
+        <div className=" nav-pro-block">
+          {!user?<Link href={"/auth"} className="signup-link">
+                Sign Up
+              </Link>:<><Image onClick={handleClick}  className="hs-profile-img" src={user.picUrl} width={50} height={50} alt={user.name} />{profileIsOpen&&<UserProfile obj={user}/>}</>}
+          </div>
       </nav>
     </header>
   );
