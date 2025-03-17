@@ -32,7 +32,7 @@ const UserProfile = ({ obj }) => {
   };
 
   return (
-    <div className="bor user-profile-section position-absolute">
+    <div className=" user-profile-section position-absolute">
       <div className="ups-div">
         <Image
           className="hs-profile-img"

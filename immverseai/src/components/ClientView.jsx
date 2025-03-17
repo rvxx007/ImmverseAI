@@ -14,7 +14,7 @@ const ClientView = () => {
 
         <div className='cv-scroller'>
         {appData.testimonial.tmUser.map((item, index)=>
-            <div className='bor cv-scroller-elements' key={index}>
+            <div className=' cv-scroller-elements' key={index}>
                 <p><span className='cv-span-title'>{item.title}</span><span className='cv-span-ext'>{item.ext}</span></p>
                 <p className='cv-span-msg'>{item.subTxt}</p>
                 <div className=' cv-profile-block'>

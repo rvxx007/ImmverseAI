@@ -21,7 +21,7 @@ export default function Home() {
   return (
    <main className="container mainBlock position-relative">
     <Navbar obj={[open, setOpen]} fbObj={[user, setUser]}/>
-    <SideNavMenu obj={[open, setOpen]}/>
+    <SideNavMenu obj={[open, setOpen]} fbObj={[user, setUser]}/>
     <Hero/>
     <Banner obj={[onPlay, setOnPlay]}/>
     {onPlay===true&&<Modal obj={[onPlay, setOnPlay]}/>}

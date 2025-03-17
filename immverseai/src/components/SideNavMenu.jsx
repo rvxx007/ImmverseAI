@@ -1,11 +1,16 @@
-
-import React from 'react'
+"use client"
+import React, { useState } from 'react'
 import Link from "next/link";
 import Image from 'next/image';
 import close from "../../public/close.svg"
+import UserProfile from './UserProfile';
 
-const SideNavMenu = ({obj}) => {
-  const [open, setOpen]= obj;
+const SideNavMenu = ({obj,fbObj}) => {
+   const [open, setOpen]= obj;
+      const [user, setUser] = fbObj;
+      const [profileIsOpen, setProfileIsOpen] = useState(false);
+  
+      const handleClick= ()=>setProfileIsOpen(!profileIsOpen);
  
   return (
     <aside className={`w-100 ${open?"d-flex":"d-none"} sidenavmenu position-absolute top-0 end-0 bor d-flex flex-column justify-content-start gap-5 align-items-center`}>
@@ -29,9 +34,9 @@ const SideNavMenu = ({obj}) => {
               </Link>
             </li>
             <li className=' list-item-1'>
-              <Link href={"/auth"} className="signup-link">
-                Sign Up
-              </Link>
+              {!user?<Link href={"/auth"} className="signup-link">
+                              Sign Up
+                            </Link>:<><Image onClick={handleClick}  className="hs-profile-img" src={user.picUrl || ""} width={50} height={50} alt={user.name} />{profileIsOpen&&<UserProfile obj={user}/>}</>}
             </li>
           </ul>
 

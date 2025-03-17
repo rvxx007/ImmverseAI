@@ -463,6 +463,7 @@ font-size: 55px;
 .fs-card-block{
   width:  353px;
   height: 300px;
+  padding-right:  5px ;
   position: relative;
 }
 
@@ -637,63 +638,6 @@ color: #EB4468;
 
 /* -------------------------------------------------------------- */
 
-@media (max-width: 992px)  {
-
-  .header-section>nav>div>span{
-    margin-left: 0px;
-  }
-
-  .menu-list{
-    display: none;
-  }
-  
-  .ham-menu-img{
-    display: block;
-  }
-
-  .menu-list-block{
-    justify-content: right;
-  }
-
-  .hero-parent1-div1{
-    width: 100%;
-    padding: 0px;
-    margin-top: 0px;
-  }
-
-  .hero-parent1{
-    height: auto;
-    flex-direction: column;
-  }
-
-  .hero-cvr-img{
-    height: auto;
-  }
-
-  .hero-parent2{
-    flex-direction: column;
-    height: 54rem;
-
-  }
-
-  .hero-parent2-div1{
-    margin-top: 75px;
-    gap: 12px;
-  }
-
-  .hp1,.hp2{
-    width: 49%;
-    /* height: 100%; */
-  }
-
-  .div4{
-    width: 100%;
-    padding: 10px;
-  }
-
-  .fs-card-block{
-    width: 100%;
-  }
 
 /* ------------------------------------ */
 /* Banner Section */
@@ -735,8 +679,6 @@ color: #EB4468;
   display: flex;
   justify-content: right;
   align-items: center;
-  border: 1px solid greenA  ;
-
 }
 
 .ms-div>.ms-close-div{
@@ -767,7 +709,89 @@ color: #EB4468;
   }
 
 
-}
+  @media (max-width: 992px)  {
+
+    .header-section>nav>div>span{
+      margin-left: 0px;
+    }
+  
+    .menu-list{
+      display: none;
+    }
+    
+    .ham-menu-img{
+      display: block;
+    }
+  
+    .menu-list-block{
+      justify-content: right;
+    }
+  
+    .hero-parent1-div1{
+      width: 100%;
+      padding: 0px;
+      margin-top: 0px;
+    }
+  
+    .hero-parent1{
+      height: auto;
+      flex-direction: column;
+    }
+  
+    .hero-cvr-img{
+      height: auto;
+    }
+  
+    .hero-parent2{
+      flex-direction: column;
+      height: 58rem;
+      margin:  30px 0px ;
+    } 
+  
+    .hero-parent2-div1{
+      margin-top: 75px;
+      gap: 12px;
+    }
+  
+    .hp1,.hp2{
+      width: 49%;
+      /* height: 100%; */
+    }
+  
+    .div4{
+      width: 100%;
+      padding: 10px;
+    }
+  
+    .fs-blur-card{
+      width: 100%;
+    }
+  
+    .user-profile-section{
+      display: none;
+    }
+  
+    .cv-scroller{
+      grid-auto-columns: 100%;
+  }
+  
+  .cv-scroller-elements{
+      width: 100%;
+  }
+
+  .features-section{
+    /* padding: 30px; */
+    margin: 0px 0px;
+  }
+
+  .hero-cvr-img{
+    width: 95%;
+  }
+  
+  .nav-pro-block{
+    display: none;
+  }
+}  
 
 
 ::-webkit-scrollbar{
