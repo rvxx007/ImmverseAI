@@ -9,14 +9,15 @@ import ClientView from "@/components/ClientView";
 import SideNavMenu from "@/components/SideNavMenu";
 import { useEffect, useState } from "react";
 import Modal from "@/components/Modal";
+import envConfig from "../../config/envConfig";
 
 export default function Home() {
   const [open, setOpen] = useState(false);
   const [onPlay, setOnPlay] = useState(false);
   const [user, setUser] = useState({});
  
-  useEffect(()=>setUser(JSON.parse(localStorage.getItem("userData"))),[])
-  
+  useEffect(()=>setUser(JSON.parse(localStorage.getItem("userData"))),[]);
+
   return (
    <main className="container mainBlock position-relative">
     <Navbar obj={[open, setOpen]} fbObj={[user, setUser]}/>

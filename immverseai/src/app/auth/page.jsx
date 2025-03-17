@@ -15,6 +15,7 @@ import { signInWithPopup, GoogleAuthProvider } from 'firebase/auth';
 
 const Authentication = () => {
 
+ console.log(process.env.NEXT_PUBLIC_HIAM);
  
   const [user, setUser] = useState(null);
   // const unsubscribe = auth
