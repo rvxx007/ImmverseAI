@@ -4,9 +4,11 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import React, { useEffect, useState } from "react";
+import userImg from "../../public/userimg.svg";
+import { fbApp } from "../../firebaseConfig";
 
 const UserProfile = ({ obj }) => {
-  const auth = getAuth();
+  const auth = getAuth(fbApp);
   const router = useRouter();
   const [user, setUser] = useState(null);
   useEffect(() => {
@@ -25,6 +27,7 @@ const UserProfile = ({ obj }) => {
     try {
       localStorage.removeItem("userData");
       await signOut(auth);
+      window.location.reload()
       router.push("/");
     } catch (error) {
       console.error("Error Logout: " + error.message);
@@ -36,10 +39,10 @@ const UserProfile = ({ obj }) => {
       <div className="ups-div">
         <Image
           className="hs-profile-img"
-          src={obj.picUrl}
+          src={obj.picUrl || userImg}
           width={100}
           height={100}
-          alt={obj.name}
+          alt={"Profile Picture"}
         />
         <div>
           <h4>{obj.name}</h4>

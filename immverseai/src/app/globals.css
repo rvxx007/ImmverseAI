@@ -686,10 +686,10 @@ color: #EB4468;
 
 .ms-close-div{
   display: flex;
-  justify-content: space-between;
+  justify-content: right;
   align-items: center;
   cursor: pointer;
-  z-index: 10000;
+  z-index: 1000;
 }
 
 

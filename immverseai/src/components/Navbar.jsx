@@ -6,6 +6,7 @@ import logo from "../../public/ImmverseAI.svg";
 import hmbMenu from "../../public/hamMenu.svg";
 import Link from "next/link";
 import UserProfile from "./UserProfile";
+import userImg from "../../public/userimg.svg";
 
 const Navbar = ({obj,fbObj}) => {
 
@@ -63,7 +64,7 @@ const Navbar = ({obj,fbObj}) => {
         <div className=" nav-pro-block">
           {!user?<Link href={"/auth"} className="signup-link">
                 Sign Up
-              </Link>:<><Image onClick={handleClick}  className="hs-profile-img" src={user.picUrl || ""} width={50} height={50} alt={user.name} />{profileIsOpen&&<UserProfile obj={user}/>}</>}
+              </Link>:<><Image onClick={handleClick}  className="hs-profile-img" src={user?.picUrl || userImg} width={50} height={50} alt={"Profile Picture"} />{profileIsOpen&&<UserProfile obj={user}/>}</>}
           </div>
       </nav>
     </header>
