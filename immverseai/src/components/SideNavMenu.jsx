@@ -4,6 +4,8 @@ import Link from "next/link";
 import Image from 'next/image';
 import close from "../../public/close.svg"
 import UserProfile from './UserProfile';
+import userImg from "../../public/userimg.svg";
+
 
 const SideNavMenu = ({obj,fbObj}) => {
    const [open, setOpen]= obj;
@@ -36,7 +38,7 @@ const SideNavMenu = ({obj,fbObj}) => {
             <li className=' list-item-1'>
               {!user?<Link href={"/auth"} className="signup-link">
                               Sign Up
-                            </Link>:<><Image onClick={handleClick}  className="hs-profile-img" src={user.picUrl || ""} width={50} height={50} alt={user.name} />{profileIsOpen&&<UserProfile obj={user}/>}</>}
+                            </Link>:<><Image onClick={handleClick}  className="hs-profile-img" src={user?.picUrl ?? userImg} width={50} height={50} alt={user?.name ?? "Profile Pic" } />{profileIsOpen&&<UserProfile obj={user}/>}</>}
             </li>
           </ul>
 

@@ -39,7 +39,7 @@ const UserProfile = ({ obj }) => {
       <div className="ups-div">
         <Image
           className="hs-profile-img"
-          src={obj.picUrl || userImg}
+          src={obj.picUrl ?? userImg}
           width={100}
           height={100}
           alt={"Profile Picture"}

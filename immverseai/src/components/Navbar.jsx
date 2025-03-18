@@ -64,7 +64,7 @@ const Navbar = ({obj,fbObj}) => {
         <div className=" nav-pro-block">
           {!user?<Link href={"/auth"} className="signup-link">
                 Sign Up
-              </Link>:<><Image onClick={handleClick}  className="hs-profile-img" src={user?.picUrl || userImg} width={50} height={50} alt={"Profile Picture"} />{profileIsOpen&&<UserProfile obj={user}/>}</>}
+              </Link>:<><Image onClick={handleClick}  className="hs-profile-img" src={user?.picUrl ?? userImg} width={50} height={50} alt={"Profile Picture"} />{profileIsOpen&&<UserProfile obj={user}/>}</>}
           </div>
       </nav>
     </header>
