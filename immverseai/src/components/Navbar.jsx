@@ -14,7 +14,7 @@ const Navbar = ({obj,fbObj}) => {
     const [open, setOpen]= obj;
     const [user, setUser] = fbObj;
     const [profileIsOpen, setProfileIsOpen] = useState(false);
-
+    
     const handleClick= ()=>setProfileIsOpen(!profileIsOpen);
 
   return (

@@ -14,11 +14,10 @@ import { signInWithPopup, GoogleAuthProvider } from 'firebase/auth';
 
 
 const Authentication = () => {
-
- console.log(process.env.NEXT_PUBLIC_HIAM);
  
   const [user, setUser] = useState(null);
-  // const unsubscribe = auth
+  const [isLoading , setIsLoading] = useState(false);
+  
   const router = useRouter();
   useEffect(()=>{
     
@@ -50,6 +49,7 @@ const Authentication = () => {
     const auth = getAuth(fbApp);
     const provider = new GoogleAuthProvider();
     try{
+      setIsLoading(true);
       const data = await signInWithPopup(auth, provider);
 
       localStorage.setItem("userData",JSON.stringify({
@@ -58,6 +58,7 @@ const Authentication = () => {
         "email":data.user.email,
         "picUrl":data.user.photoURL
       }))
+      setIsLoading(false);
       router.push("/");
     }catch(error){
       console.error("Error signin with Google: "+error.message);
@@ -71,8 +72,14 @@ const Authentication = () => {
           <h1>Welcome To BookApp</h1>
         </section>
         <section className='btnSec'>
-          <button onClick={signInWithApple}  className='signUpBtn'><span>Connect with Apple</span> <Image src={apple} alt='apple logo'/></button>
-          <button onClick={signInWithGoogle} className='signUpBtn'><span>Connect with Google</span><Image src={google} alt='google logo'/></button>
+          <button style={{
+          backgroundColor:(isLoading?"#ffffff7a":"#FFFFFF26")
+        }} disabled={isLoading?true:false}
+         onClick={signInWithApple}  className='signUpBtn'><span>Connect with Apple</span> <Image src={apple} alt='apple logo'/></button>
+          
+          <button style={{
+          backgroundColor:(isLoading?"#ffffff7a":"#FFFFFF26")
+        }} disabled={isLoading?true:false} onClick={signInWithGoogle} className='signUpBtn'><span>Connect with Google</span><Image src={google} alt='google logo'/></button>
         </section>
     </main>
   )

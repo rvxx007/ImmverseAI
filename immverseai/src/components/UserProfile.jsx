@@ -11,6 +11,9 @@ const UserProfile = ({ obj }) => {
   const auth = getAuth(fbApp);
   const router = useRouter();
   const [user, setUser] = useState(null);
+  
+
+
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (user) => {
       if (user) {
