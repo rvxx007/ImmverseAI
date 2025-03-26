@@ -15,9 +15,9 @@ const SideNavMenu = ({obj,fbObj}) => {
       const handleClick= ()=>setProfileIsOpen(!profileIsOpen);
  
   return (
-    <aside className={`w-100 ${open?"d-flex":"d-none"} sidenavmenu position-absolute top-0 end-0 bor d-flex flex-column justify-content-start gap-5 align-items-center`}>
-        <ul className="w-100 sidenav-ul fs-1 fs-bold d-flex flex-column justify-content-evenly gap-5 align-items-center">
-        <li className=' list-item-close'>
+    <aside className={`w-100 ${open?"d-flex":"d-none"} sidenavmenu position-absolute top-0 end-0 d-flex flex-column justify-content-start gap-5 align-items-center`}>
+        <ul className="w-100 p-0 sidenav-ul fs-1 fs-bold d-flex flex-column justify-content-evenly gap-5 align-items-center bor">
+        <li className=' list-item-close bor'>
               <span className='' onClick={()=>setOpen(false)}><Image  src={close} width={50} height={50} alt='close'/></span>
             </li>
             <li className=' list-item'>
@@ -38,7 +38,7 @@ const SideNavMenu = ({obj,fbObj}) => {
             <li className=' list-item-1'>
               {!user?<Link href={"/auth"} className="signup-link">
                               Sign Up
-                            </Link>:<><Image onClick={handleClick}  className="hs-profile-img" src={user?.picUrl ?? userImg} width={50} height={50} alt={user?.name ?? "Profile Pic" } />{profileIsOpen&&<UserProfile obj={user}/>}</>}
+                            </Link>:<><Image onClick={handleClick}  className="hs-profile-img" src={user?.picUrl ?? userImg} width={70} height={70} alt={user?.name ?? "Profile Pic" } />{profileIsOpen&&<UserProfile obj={user}/>}</>}
             </li>
           </ul>
 
