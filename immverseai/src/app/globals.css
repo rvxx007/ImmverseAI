@@ -6,6 +6,7 @@
   --foreground: #ededed;
 
   --p1: #C15CB0;
+  --p2: #c15cb080;
   --tWhite: white;
   --tBlack: black;
 }
@@ -50,7 +51,6 @@ body {
 
 .header-section>nav>div>span {
   padding: 5px;
-
   margin-left: 20px;
 }
 
@@ -495,7 +495,7 @@ body {
 }
 
 .fs-card-block:hover {
-  filter: drop-shadow(0 0 0.95rem var(--p1));
+  filter: drop-shadow(0 0 5.95rem var(--p2));
 }
 
 
@@ -506,6 +506,7 @@ body {
   color: white;
   bottom: 0;
   border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
   font-size: 18px;
   line-height: 100%;
   display: flex;
@@ -523,7 +524,6 @@ body {
 .fs-card-img {
   width: 350px;
   height: 300px;
-
   margin: auto 0px;
 }
 
