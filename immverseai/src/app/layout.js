@@ -10,12 +10,13 @@ const inter = Inter({
 
 export const metadata = {
   title: "ImmverseAI",
-  description: "",
+  description: "ImmverseAI brings your gaming experience to life with cutting-edge virtual technology. Step into a three-dimensional digital world that feels incredibly real, offering a whole new way to play. Become the main character in your own adventure, exploring immersive landscapes and engaging in gameplay like never before. With ImmverseAI, gaming transcends the screen — experience the thrill of a new reality.",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      
       <AppContextProvider>
       <body cz-shortcut-listen="true" className={`${inter.variable}`} >
         {children}

@@ -16,8 +16,8 @@ const SideNavMenu = ({obj,fbObj}) => {
  
   return (
     <aside className={`w-100 ${open?"d-flex":"d-none"} sidenavmenu position-absolute top-0 end-0 d-flex flex-column justify-content-start gap-5 align-items-center`}>
-        <ul className="w-100 p-0 sidenav-ul fs-1 fs-bold d-flex flex-column justify-content-evenly gap-5 align-items-center bor">
-        <li className=' list-item-close bor'>
+        <ul className="w-100 p-0 sidenav-ul fs-1 fs-bold d-flex flex-column justify-content-evenly gap-5 align-items-center">
+        <li className=' list-item-close '>
               <span className='' onClick={()=>setOpen(false)}><Image  src={close} width={50} height={50} alt='close'/></span>
             </li>
             <li className=' list-item'>
